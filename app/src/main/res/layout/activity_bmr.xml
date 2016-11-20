@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#86ad70"
+            android:fadingEdge="horizontal"
+            tools:context="com.example.android.fitbit.Bmrcalc">
+
+        <!-- Text view for BMR Text -->
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="40dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:text="BMR"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:typeface="serif" />
+
+    <!-- Textview for calculator text -->
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calculator"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+        <!-- Textview for GENDER text -->
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:text="GENDER"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <!-- Radio buttons for GENDER input -->
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:paddingTop="10dp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEMALE"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:paddingTop="05dp" />
+
+        </RadioGroup>
+
+    <!-- Textview for WEIGHT(KG) text -->
+
+    <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:text="WEIGHT (KG)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <!-- Edit text for entering weight with hint in kgs -->
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="IN KGs"
+            android:ems="10"
+            android:fadingEdgeLength="10dp"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" >
+            <requestFocus />
+        </EditText>
+
+        <!-- Text view for HEIGHT(CM)text -->
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:text="HEIGHT (CM)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <!-- Edit text for entering height with hint in cm -->
+        <EditText
+            android:id="@+id/et5"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="IN CMs"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <!-- Text view for AGE text -->
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="AGE"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <!-- Edit text for entering AGE in yrs -->
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="IN YEARS"
+        android:ems="10"
+        android:inputType="number" >
+    </EditText>
+
+
+    <!-- Button for calculating the formula, when pressed, with calculate written over it -->
+        <Button
+            android:id="@+id/ib2"
+            android:layout_width="158dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fadingEdge="vertical"
+            android:longClickable="true"
+            android:text="Calculate"
+            android:visibility="visible" />
+
+        <!-- Text view for showing result -->
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:text=""
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

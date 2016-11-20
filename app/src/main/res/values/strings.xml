@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FitBit</string>
+    <string name="option1">Sedentary</string>
+    <string name="option2">Lightly Active</string>
+    <string name="option3">Moderate Active</string>
+    <string name="option4">Very Active</string>
+    <string name="option5">Extremely Active</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff9f"
+    tools:context="com.example.android.fitbit.Homepage">
+
+
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:text="BODY FAT Calculator"
+        android:id="@+id/button4"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginBottom="86dp"
+        android:background="#ffff9f"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/buttonh"
+        android:background="#ffff9f"/>
+
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:text="BMI Calculator"
+        android:id="@+id/button3"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#ffff9f"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:text="BMR Calculator"
+        android:id="@+id/button2"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#ffff9f"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp" />
+
+
+</RelativeLayout>
+
+
+
